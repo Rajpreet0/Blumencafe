@@ -2,13 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Background from '../../../assets/images/home/background.jpg'
-import Fade from 'react-reveal/Fade'
 
 function Informations() {
   return (
 <div className='mb-40 font-merri'>
         <div className='flex flex-col p-6 items-center w-full justify-around md:flex-row'>
-      <Fade right>
+      
         <div className=' rounded-lg md:w-1/2 '>
                <h1 className='mt-8 text-4xl md:text-5xl  md:mt-0' style={{color: '#0F3D3E'}}>Lorem ipsum dolor</h1>
              
@@ -35,7 +34,7 @@ function Informations() {
                  className='rounded-xl '
                 />
             </div>
-        </Fade>
+     
         </div>
     </div>
   )
