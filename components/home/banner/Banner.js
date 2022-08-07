@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
-import Fade from 'react-reveal/Fade'
 
 function Banner() {
   return (
     <div className='mb-40 font-merri'>
-     <Fade bottom>
+    
        <div class="container mx-auto py-9 md:py-12 px-4 md:px-6">
             <div class="flex items-strech justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 lg:space-x-8">
                 <div class="flex flex-col rounded-xl md:flex-row items-strech justify-between py-6 px-6 md:py-12 lg:px-12 md:w-8/12 lg:w-7/12 xl:w-8/12 2xl:w-9/12" style={{backgroundColor: '#0F3D3E'}}>
@@ -22,7 +21,7 @@ function Banner() {
                 
             </div>
         </div>
-      </Fade>
+   
     </div>
   )
 }
