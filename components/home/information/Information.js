@@ -2,13 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Background from '../../../assets/images/home/background.jpg'
-import Fade from 'react-reveal/Fade'
 
 function Information() {
   return (
     <div className='mb-40 font-merri'>
         <div className='flex flex-col p-6 items-center w-full justify-around md:flex-row'>
-          <Fade left>  
+
             <div className=' border-4 border-black rounded-xl md:w-1/2'>
                 <Image 
                  src={Background}
@@ -41,7 +40,6 @@ function Information() {
              </div>
 
             </div>
-            </Fade>
         </div>
     </div>
   )
