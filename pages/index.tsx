@@ -74,16 +74,4 @@ const Home: NextPage =  () => {
 
 export default Home
 
-export const getStaticProps = async () => {
-  const url = `https://graph.instagram.com/me?fields=id,username&access_token?grant_type=ig_exchange_token&client_secret=${process.env.INSTAGRAM_CLIENT_SECRET}&access_token=${process.env.INSTAGRAM_TOKEN}`
-  const data = await fetch(url);
-  const feed = await data.json();
 
-  console.log(feed);
-
-  return {
-    props: {
-
-    }
-  }
-}
