@@ -26,8 +26,8 @@ function Footer() {
                    <a className='flex items-center'>
                       <Image
                       src={Logo}
-                      height={115}
-                      width={130}
+                      height={100}
+                      width={145}
                       className='mr-3 h-8'/>
                    </a>
                 </Link>

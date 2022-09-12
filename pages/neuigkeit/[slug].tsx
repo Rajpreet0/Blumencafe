@@ -19,12 +19,12 @@ export default function Neuigkeit({ neuigkeits }: Props) {
   return (
     <div>
         <Header/>
-        <div className='pb-32 font-merri pt-40' style={{backgroundColor: '#FFDF9BFF'}}>  
+        <div className='pb-32 font-merri pt-40' style={{backgroundColor: '#a4754a'}}>  
             
             <Link href='/neuigkeiten'>
              <div className='flex p-4'>   
-               <BsArrowLeftCircle className='w-6 h-6 cursor-pointer'/>
-               <p className='pl-3 text-md cursor-pointer'>Zurück</p>
+               <BsArrowLeftCircle className='w-6 h-6 cursor-pointer text-white'/>
+               <p className='pl-3 text-md cursor-pointer text-white'>Zurück</p>
              </div>
             </Link> 
 
@@ -38,8 +38,8 @@ export default function Neuigkeit({ neuigkeits }: Props) {
                ></img> 
       
               <div className='flex flex-col justify-center'>
-                <p className='pl-4 text-xl mt-4  md:mt-0'>{neuigkeits.zeitraum}</p>
-                <p className='pl-4 pt-2 text-4xl '>{neuigkeits.titel}</p>
+                <p className='pl-4 text-xl mt-4 text-white  md:mt-0'>{neuigkeits.zeitraum}</p>
+                <p className='pl-4 pt-2 text-4xl text-white '>{neuigkeits.titel}</p>
               </div>
 
             </div>

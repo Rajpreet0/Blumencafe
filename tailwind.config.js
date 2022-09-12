@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         merri: ['Merriweather', 'serif'],
         satisfy: ['Satisfy', 'cursive'],
+        lobster: ['Lobster Two','cursive'],
       }
     },
   },

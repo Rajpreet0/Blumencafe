@@ -5,7 +5,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com'
 import {ToastContainer, toast} from 'react-toastify'
-
 function Reservierung() {
  
     
@@ -46,12 +45,16 @@ function Reservierung() {
   <>  
   <ToastContainer/>
     <div className='font-merri mt-14 pb-8' id='reserve'>
-         <h1 className='text-center text-4xl tracking-wide'>Reservierung</h1>
+         <h1 className='text-center text-4xl tracking-wide text-white'>Reservierung</h1>
        <div className='flex justify-center mt-4 w-full'> 
-         <p className='text-center text-lg max-w-3xl '>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+         <p className='text-center text-lg max-w-3xl' style={{color: '#0f3d3e'}}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
        </div>
+       
+
   
-  <div className='flex pt-14 justify-center p-5'>
+  <div className='flex pt-14 w-full justify-center'>
+      
+    <div className=' flex p-5 '>  
     <form 
     onSubmit={sendEmail}
     className="w-full max-w-lg">
@@ -59,7 +62,7 @@ function Reservierung() {
 
 
     <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
-      <label className="block  uppercase tracking-widest text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+      <label className="block  uppercase tracking-widest text-white text-xs font-bold mb-2" for="grid-first-name">
         Vorname
       </label>
       <input
@@ -70,7 +73,7 @@ function Reservierung() {
      
     </div>
     <div className="w-full md:w-1/2 px-3">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-last-name">
          Nachname
       </label>
       <input 
@@ -83,7 +86,7 @@ function Reservierung() {
 
   <div className="flex flex-wrap -mx-3 mb-4">
     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-      <label className="block  uppercase tracking-widest text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+      <label className="block  uppercase tracking-widest text-white text-xs font-bold mb-2" for="grid-first-name">
         E-mail
       </label>
       <input 
@@ -94,7 +97,7 @@ function Reservierung() {
      
     </div>
     <div className="w-full md:w-1/2 px-3">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+      <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-last-name">
          Telefon
       </label>
       <input 
@@ -107,7 +110,7 @@ function Reservierung() {
 
   <div className="flex flex-wrap -mx-3 mb-2">
     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+      <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-city">
         Datum
       </label>
       <DatePicker
@@ -116,6 +119,7 @@ function Reservierung() {
           onChange={date => setSelectedDate(date)}
           dateFormat='dd.MM.yyyy '
           minDate={new Date()}
+          filterDate={date => date.getDay() != 1}
           withPortal
           locale={de}
           placeholderText='06/08/19'
@@ -124,7 +128,7 @@ function Reservierung() {
           />
     </div>
     <div class="w-full md:w-1/3 px-3 mb-4 md:mb-0">
-     <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+     <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-last-name">
          Uhrzeit
       </label>
       <input 
@@ -134,7 +138,7 @@ function Reservierung() {
       className="appearance-none block w-full bg-white text-gray-700  rounded py-5 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-last-name" type="time" min="09:00" max="18:00"   placeholder="13:30"/>
     </div>
     <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+      <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-zip">
         Personenanzahl
       </label>
       <input 
@@ -145,8 +149,8 @@ function Reservierung() {
     </div>
     
    <div className='w-full px-3 mt-4 mb-6 md:mb-0'>
-      <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
-        Notiz <span className='text-gray-700 lowercase'>(optional)</span>
+      <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-zip">
+        Notiz <span className='text-white lowercase'>(optional)</span>
       </label>
       <textarea
       name="note" 
@@ -161,8 +165,10 @@ function Reservierung() {
   </div>
 </form>
 </div>
+</div>
    
     </div>
+
     </>
   )
 }

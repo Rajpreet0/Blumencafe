@@ -19,7 +19,7 @@ function header() {
 
   return (
     <div className='font-merri'>
-      <nav className='fixed w-full p-2 z-50' style={{backgroundColor: '#FFDF9BFF'}}>
+      <nav className='fixed w-full p-2 z-50' style={{backgroundColor: '#a4754a'}}>
          <div className='flex items-center justify-between'>
            <div className='p-4 cursor-pointer drop-shadow-md'>
               <Link href='/'>
@@ -27,11 +27,11 @@ function header() {
                  priority
                  src={Logo}
                  height={80}
-                 width={100}
+                 width={125}
                  alt=""/>
               </Link>
            </div>
-           <div className='hidden md:flex space-x-5 text-xl lg:space-x-14' style={{color: '#0F3D3E'}}>
+           <div className='hidden md:flex space-x-5 text-xl lg:space-x-14 text-white'>
              <Link href='/' className='cursor-pointer hover:tracking-widest transition-all'>
                Home
              </Link>
@@ -51,7 +51,7 @@ function header() {
                 <button
                 className='px-8 py-2 rounded-full tracking-widest hover:scale-110 transition-all drop-shadow-md'
                 style={{backgroundColor: '#0F3D3E'}}>
-                  Kontakt
+                  Reservieren
                 </button>
               </Link>  
 
@@ -93,7 +93,7 @@ function header() {
           toggle && (
             <div>
                <div className='min-h-screen flex flex-col items-center justify-center pb-32  space-y-6 text-xl sm:w-auto
-                               sm:self-center  transition-all' style={{backgroundColor: '#FFDF9BFF', color: '#0F3D3E'}}>
+                               sm:self-center  transition-all' style={{backgroundColor: '#a4754a', color: '#fff'}}>
                     <Link href='/' className='cursor-pointer hover:tracking-widest transition-all'>
                       Home
                    </Link>
@@ -111,7 +111,7 @@ function header() {
                     <button
                      className='px-8 py-2 rounded-full tracking-widest'
                      style={{backgroundColor: '#0F3D3E'}}>
-                       Kontakt
+                       Reservieren
                     </button>
                   </Link>  
 

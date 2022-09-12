@@ -12,9 +12,9 @@ function Events() {
   return (
     <div>
      <Header/> 
-        <div className='min-h-screen pt-36 pb-20 font-merri' style={{backgroundColor: '#FFDF9BFF'}}>
+        <div className='min-h-screen pt-36 pb-20 font-merri' style={{backgroundColor: '#a4754a'}}>
       
-            <h1 className='text-center mb-5 text-6xl font-satisfy' style={{color: '#0F3D3E'}}>Events</h1>
+            <h1 className='text-center mb-5 text-6xl font-satisfy text-white'>Events</h1>
 
            <div className='flex flex-col p-4  justify-between items-center md:p-0 '>
               <div className='p-4 bg-white  rounded-lg border shadow-md md:max-w-2xl md:p-0 '>
@@ -24,8 +24,8 @@ function Events() {
               className='object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg'
               />
               <div className='flex flex-col justify-between p-4 leading-normal'>
-                <h5 className='md-2 text-2xl font-bold tracking-tight text-black'>Noteworthy technology acquisitions 2021</h5>
-                <p className='mb-1 font-normal text-gray-700'>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <h5 className='md-2 text-2xl font-bold tracking-tight text-black'>Events bei uns im Blumencafe</h5>
+                <p className='mb-1 font-normal text-gray-700'>Hier im oberen Bereich des Blumencafe ist es möglich Events zu gestalten. </p>
               </div>
 
                <hr className='m-1 border  border-gray-600'/>
@@ -36,7 +36,7 @@ function Events() {
                        alt=''
                        className=''
                       />
-                      <p className='max-w-lg mt-2 md:mt-0'><span className='font-bold'>Here</span>  <br/> are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                      <p className='max-w-lg mt-2 md:mt-0'><span className='font-bold'>Hochzeitsfeiern</span>  <br/> das Blumencafe kann genutzt werden um seine Hochezeit zu feiern.</p>
                    </div>
         
                 <hr className='m-4 '/>  
@@ -47,7 +47,7 @@ function Events() {
                        alt=''
                        className=''
                       />
-                      <p className='max-w-lg mt-2 md:mt-0'><span className='font-bold'>Here</span>  <br/> are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                      <p className='max-w-lg mt-2 md:mt-0'><span className='font-bold'>Catering</span>  <br/> auch Catering können wir hier im Blumencafe anbieten. <span className='text-white'>asodjsaodj</span></p>
                 </div>
 
                 <hr className='m-4 '/>  
@@ -58,7 +58,7 @@ function Events() {
                        alt=''
                        className=''
                       />
-                      <p className='max-w-lg mt-2 md:mt-0'><span className='font-bold'>Here</span> <br/> are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                      <p className='max-w-lg mt-2 md:mt-0'><span className='font-bold'>Geburtstage</span> <br/> ein besondere Geburtstagfeier kann hier gefeiert werden. <span className='text-white'>asodjsaodj</span></p>
                 </div>
 
                 <hr className='m-1 border  border-gray-600'/>

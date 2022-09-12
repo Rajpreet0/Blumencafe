@@ -1,28 +1,27 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import Background from '../../../assets/images/home/background.jpg'
-import Fade from 'react-reveal/Fade'
+import Background from '../../../assets/images/home/home_bg1.jpg'
 
 function Information() {
   return (
-    <div className='mb-40 font-merri'>
+    <div className='mb-28 font-merri'>
         <div className='flex flex-col p-6 items-center w-full justify-around md:flex-row'>
-          <Fade left>  
-            <div className=' border-4 border-black rounded-xl md:w-1/2'>
+        
+            <div className=' pt-44 rounded-xl md:w-5/12'>
                 <Image 
                  src={Background}
                  alt=''
-                 className='rounded-xl '
+                 className='rounded-xl drop-shadow-xl'
                 />
             </div>
 
-            <div className=' rounded-lg md:w-1/2 md:ml-8'>
-               <h1 className='mt-8 text-4xl md:text-5xl  md:mt-0' style={{color: '#0F3D3E'}}>Lorem ipsum dolor</h1>
+            <div className=' rounded-lg mt-0 md:mt-24 md:w-1/2 md:ml-8'>
+               <h1 className='mt-8 text-4xl md:text-5xl  md:mt-0 text-white'>Besuche uns</h1>
              
                <p
-                style={{color: '#876445'}}
-                className='mt-4 text-lg'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                style={{color: '#0F3D3E'}}
+                className='mt-4 text-lg'>Schalten Sie ab, nehmen Sie sich Zeit und Geniessen Sie unsere Spezialitäten. Wir werden Sie mit verschiedenen Variationen Ihren Gaumen mit Freude erfüllen.</p>
               
              <div className="flex"> 
                <Link href='/'>
@@ -41,7 +40,7 @@ function Information() {
              </div>
 
             </div>
-            </Fade>
+           
         </div>
     </div>
   )

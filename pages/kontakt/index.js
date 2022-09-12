@@ -8,18 +8,17 @@ import {BsTelephoneFill} from 'react-icons/bs';
 import {MdEmail} from 'react-icons/md';
 import {RiInstagramFill} from 'react-icons/ri';
 
-
 function Kontakt() {
   return (
     <div>
         <Header/>
-         <div className='font-merri min-h-screen pt-30' style={{backgroundColor: '#FFDF9BFF'}}>
+         <div className='font-merri min-h-screen pt-30' style={{backgroundColor: '#a4754a'}}>
             <Kontakt_Hero/>
             <Reservierung/>
             <hr className='border border-black '/>
             <div className='mt-14'>
-              <h1 className='text-center text-4xl tracking-wide'>Anliegen ?</h1>
-              <h2 className='text-center text-xl mt-2'>Erreiche uns auf andere Wege</h2>
+              <h1 className='text-center text-4xl text-white tracking-wide'>Anliegen ?</h1>
+              <h2 className='text-center text-xl mt-2' style={{color: '#0f3d3e'}}>Erreiche uns auf andere Wege</h2>
               
           <div className='flex justify-around mt-24'>
               <div className=' p-4 rounded-full hover:scale-110 transition-all cursor-pointer' style={{backgroundColor: '#0F3D3E'}}> 

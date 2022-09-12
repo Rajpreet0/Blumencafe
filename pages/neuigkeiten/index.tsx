@@ -13,19 +13,16 @@ export default function Neuigkeiten({neuigkeiten}:Props) {
   return (
     <div>
         <Header/>
-        <div className='min-h-screen pt-28 font-merri' style={{backgroundColor: '#FFDF9BFF'}}> 
+        <div className='min-h-screen pt-28 font-merri' style={{backgroundColor: '#a4754a'}}> 
         <div className='flex justify-between items-center 
         border-y border-black text-white py-10 lg:py-0' style={{backgroundColor: '#0F3D3E'}}>
          <div
          className='px-10 p-20 space-y-5'>
            <h1 className='text-6xl max-w-xl font-serif'>
-            <span
-             className='underline decoration-white text-white decoration-4'
-            >Medium</span> {" "} is a place to write, read, and connect
+             Neuigkeiten, Rabatte etc.
             </h1>
            <h2 >
-             It's easy and free to post your thinking on any topic and connect
-             with millions of readers.
+             Hier wird alles angezeigt was man über das Blumencafe wissen muss. Auch Rabatte etc.
            </h2>
          </div> 
          
