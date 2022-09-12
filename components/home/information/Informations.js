@@ -1,12 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-<<<<<<< HEAD
 import Background from '../../../assets/images/home/event_background.jpg'
 import EventIcon from '../../../assets/images/icons/event.png'
-=======
-import Background from '../../../assets/images/home/background.jpg'
->>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
 
 function Informations() {
   return (
@@ -45,11 +41,7 @@ function Informations() {
                  className='rounded-xl '
                 />
             </div>
-<<<<<<< HEAD
         
-=======
-     
->>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
         </div>
     </div>
   )
