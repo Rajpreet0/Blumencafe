@@ -1,14 +1,23 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+<<<<<<< HEAD
 import Background from '../../../assets/images/home/home_bg1.jpg'
+=======
+import Background from '../../../assets/images/home/background.jpg'
+>>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
 
 function Information() {
   return (
     <div className='mb-28 font-merri'>
         <div className='flex flex-col p-6 items-center w-full justify-around md:flex-row'>
+<<<<<<< HEAD
         
             <div className=' pt-44 rounded-xl md:w-5/12'>
+=======
+
+            <div className=' border-4 border-black rounded-xl md:w-1/2'>
+>>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
                 <Image 
                  src={Background}
                  alt=''
@@ -40,7 +49,10 @@ function Information() {
              </div>
 
             </div>
+<<<<<<< HEAD
            
+=======
+>>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
         </div>
     </div>
   )

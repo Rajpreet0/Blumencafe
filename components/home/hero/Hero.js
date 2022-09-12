@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import React from 'react'
+<<<<<<< HEAD
 import HeroBackground from '../../../assets/images/home/hero.jpg';
+=======
+import HeroBackground from '../../../assets/images/home/hero_background.png';
+
+>>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
 
 function Hero() {
   return (
@@ -22,7 +27,11 @@ export default Hero
 /*
  <div className='min-h-screen pt-36 font-merri'>
       <div className='flex flex-col items-center w-full justify-around md:flex-row'> 
+<<<<<<< HEAD
  
+=======
+   
+>>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
         <div className='p-4 md:pl-12 md:text-left'>
             <h1 className='text-4xl md:text-5xl' style={{color: '#0F3D3E'}}>Lorem ipsum dolor<br/>sit amet,</h1>
             <h2 className='mt-4 text-xl' style={{color: '#876445'}}>Lorem ipsum dolor sit amet, consetetur sadipscing elit <br/> consetetur sadipscing sit amet </h2>
@@ -36,14 +45,28 @@ export default Hero
             </Link>
           </div>
         </div>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
         <div className='md:pt-12'>
         <Image
             src={HeroBackground}
             alt=''
            />
         </div>
+<<<<<<< HEAD
   
       </div>
     </div>
 */
+=======
+
+      </div>
+    </div>
+  )
+}
+
+export default Hero
+>>>>>>> 0220b18e001fa9ca051d6745e0eba28c63e0c6ec
